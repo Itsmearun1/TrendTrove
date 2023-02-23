@@ -1,0 +1,13 @@
+.wrapper{
+    border: 1px solid red;
+    width: 90%;
+    margin: auto;
+}
+.imgbox1{
+    display: flex;
+    justify-content: space-between;
+}
+.imgbox1>img{
+    width: 33%;
+    height: 33%;
+}
