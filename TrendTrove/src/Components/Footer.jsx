@@ -1,58 +1,55 @@
-import React from "react";
-import "./Footer.css";
-
-const sections = [  {    title: "Customer Service",    items: [      "Contact Us",      "Shopping Info",      "Shipping Info",      "Returns",      "Exchanges",      "Billing & Payment",      "Size & Fit",      "International",      "FAQ",      "Rewards",      "Perks"    ]
-  },
-  {
-    title: "My Account",
-    items: [
-      "Sign In / Register",
-      "Track My Order",
-      "Return Order",
-      "Order History",
-      "Wishlist",
-      "Offers & Coupons",
-      "Rewards"
-    ]
-  },
-  {
-    title: "Credit Card",
-    items: [
-      "Apply Now",
-      "Learn More",
-      "Pay My Bill",
-      "Catalog",
-      "Order From Catalog",
-      "Request a Catalog"
-    ]
-  },
-  {
-    title: "FashionLuxe",
-    items: [
-      "About Us",
-      "About Fullbeauty Brands",
-      "Shipping To",
-      "India"
-    ]
-  }
-];
-
-export const Footer = () => {
+import React from 'react';
+import "./Footer.css"
+function Footer() {
   return (
-    <footer className="footer-wrapper">
-      <div className="footer-sections">
-        {sections.map((section, index) => (
-          <div key={index} className="footer-section">
-            <h4>{section.title}</h4>
-            <ul>
-              {section.items.map((item, i) => (
-                <li key={i}>{item}</li>
-              ))}
-            </ul>
-          </div>
-        ))}
+    <footer style={{ backgroundColor: "#2c4152", color: "#cccccc" }}>
+      <div className="footer-section font-link">
+        <h3>Who We Are</h3>
+        <ul>
+          <li>Join Our Team</li>
+          <li>Terms &amp; Conditions</li>
+          <li>We Respect Your Privacy</li>
+          <li>Fees &amp; Payments</li>
+          <li>Returns &amp; Refunds Policy</li>
+          <li>Promotions Terms &amp; Conditions</li>
+        </ul>
+      </div>
+      <div className="footer-section">
+        <h3>Help</h3>
+        <ul>
+          <li>Track Your Order</li>
+          <li>Frequently Asked Questions</li>
+          <li>Returns</li>
+          <li>Cancellations</li>
+          <li>Payments</li>
+          <li>Customer Care</li>
+          <li>How Do I Redeem My Coupon</li>
+        </ul>
+      </div>
+      <div className="footer-section">
+        <h3>Shop by</h3>
+        <ul>
+          <li>Men</li>
+          <li>Women</li>
+          <li>Kids</li>
+          <li>IndieStores</li>
+          <li>New Arrivals</li>
+          <li>Brand Directory</li>
+          <li>HomeCollections</li>
+        </ul>
+      </div>
+      <div className="footer-section">
+        <h3>Follow us</h3>
+        <ul>
+          <li>Facebook</li>
+          <li>Instagram- AJIOlife</li>
+          <li>Instagram- AJIO LUXE</li>
+          <li>Twitter</li>
+          <li>Pinterest</li>
+        </ul>
       </div>
     </footer>
   );
-};
+}
 
+export default Footer;

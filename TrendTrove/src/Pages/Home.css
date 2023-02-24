@@ -1,6 +1,5 @@
 .wrapper{
-    border: 1px solid red;
-    width: 90%;
+    width: 100%;
     margin: auto;
 }
 .imgbox1{
@@ -10,4 +9,8 @@
 .imgbox1>img{
     width: 33%;
     height: 33%;
+}
+.imgbox2{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
 }
