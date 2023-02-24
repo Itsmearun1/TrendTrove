@@ -1,26 +1,22 @@
 import React, { useState } from 'react';
 import { NavLink } from "react-router-dom";
+import { Searchbar } from './Searchbar';
 import './Dropdown.css';
 
 const sections = [
-    { name: 'FEATURED', items: ['New Arrivals', 'Best Sellers', 'Sale', 'Trending'] },
-    { name: 'TOPS & SWEATERS', items: ['T-Shirts', 'Sweaters', 'Blouses', 'Shirts'] },
-    { name: 'BOTTOMS', items: ['Pants', 'Jeans', 'Shorts', 'Skirts'] },
-    { name: 'DRESSES', items: ['Day Dresses', 'Evening Dresses', 'Maxi Dresses', 'Mini Dresses'] },
-    { name: 'ACTIVE', items: ['Workout Clothes', 'Sports Bras', 'Sneakers', 'Yoga Clothes'] },
-    { name: 'COATS & JACKETS', items: ['Winter Coats', 'Leather Jackets', 'Trench Coats', 'Parkas'] },
-    { name: 'SLEEPWEAR', items: ['Pajamas', 'Robe', 'Nightgowns', 'Slippers'] },
-    { name: 'BRAS & INTIMATES', items: ['Bras', 'Panties', 'Shapewear', 'Lingerie'] },
-    { name: 'SHOES & ACCESSORIES', items: ['Boots', 'Heels', 'Sneakers', 'Handbags'] },
-    { name: 'SWIMWEAR', items: ['Bikinis', 'One-Piece Swimsuits', 'Cover-Ups', 'Beach Accessories'] },
-    { name: 'HOME', items: ['Bed & Bath', 'Kitchen', 'Living Room', 'Outdoor'] },
-    { name: 'CLEARANCE', items: ['Sale', 'Discounts', 'Clearance Items', 'Last Chance'] },
+    { name: 'MEN', items: ['Jackets & Coats', 'Jeans', 'Shirts', 'Sweatshirts','Trousers & Pants','T-Shirts'] },
+    { name: 'WOMEN', items: ['T-Shirts', 'Sweaters', 'Blouses', 'Shirts'] },
+    { name: 'INDIE', items: ['Pants', 'Jeans', 'Shorts', 'Skirts'] },
+    { name: 'KIDS', items: ['Day Dresses', 'Evening Dresses', 'Maxi Dresses', 'Mini Dresses'] },
+    { name: 'HOME AND KITHCEN', items: ['Workout Clothes', 'Sports Bras', 'Sneakers', 'Yoga Clothes'] },
 ];
 
 export const Dropdown = () => {
     const [dropdownOpen, setDropdownOpen] = useState(null);
 
     return (
+        <div className="wrapper">
+            <Searchbar/>
         <div className="dropdown-navbar-wrapper">
             {sections.map((section, index) => (
                 <div
@@ -41,6 +37,7 @@ export const Dropdown = () => {
                     )}
                 </div>
             ))}
+        </div>
         </div>
     );
 };

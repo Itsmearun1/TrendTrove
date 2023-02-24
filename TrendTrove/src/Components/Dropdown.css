@@ -1,3 +1,6 @@
+.wrapper{
+    display: flex;
+}
 .dropdown-navbar-wrapper {
     display: flex;
     align-items: center;
