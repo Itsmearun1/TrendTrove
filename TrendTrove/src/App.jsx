@@ -1,13 +1,13 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import './App.css'
-import Home from './Pages/Home'
+import Navbar from './Components/Navbar'
+import Allroutes from './Pages/AllRoutes'
 function App() {
 
 
   return (
     <div className="App">
-      <Home/>
+      <Navbar/>
+      <Allroutes/>
     </div>
   )
 }
