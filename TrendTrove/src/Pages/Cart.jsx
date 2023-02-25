@@ -54,12 +54,12 @@ const Cart = () => {
 
   return (
     <>
-      <h2>Shopping Bag</h2>
+      <div><h2 className="title">Shopping Bag</h2></div>
       <div className="cart-page">
         <div className="cart-items">
           {cartItems.map((item) => (
             <div className="cart-item" key={item.id}>
-              <img src={item.img1} alt={item.name} />
+              <img src={item.img} alt={item.name} />
               <div className="item-info">
                 <div className="item-name">{item.name}</div>
                 <div className="item-price">₹{item.price}</div>
