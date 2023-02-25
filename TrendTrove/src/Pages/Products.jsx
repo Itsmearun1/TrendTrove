@@ -29,7 +29,7 @@ const Products = () => {
     axios
       .get("https://63f5c81b9daf59d1ad7b4257.mockapi.io/data")
       .then((res) => {
-        console.log(res.data)
+        console.log(res.data);
         setbaseData(res.data);
         setProducts(res.data);
       })
@@ -68,9 +68,18 @@ const Products = () => {
         return b.rating - a.rating;
       }
     });
-
+  console.log(products)
   return (
     <>
+      <div className="head">
+        <h1>MEN'S Jackets & Coats</h1>
+        <p>
+          Versatile and sophisticated, AJIO brings to you a wide range of coats
+          and jackets for men. Be it printed, embroidered, ripped or distressed
+          – we have everything. Browse through cool gilets, quilted bombers and
+          winter jackets to keep your fashion game on fleek this cold season.
+        </p>
+      </div>
       <div className="search-container">
         <input
           type="text"
@@ -127,22 +136,12 @@ const Products = () => {
               <img
                 src={currentImage[product.id] || product.img}
                 alt={product.name}
-                // onMouseEnter={() => {
-                //   setCurrentImage({
-                //     ...currentImage,
-                //     [product.id]: product.img2,
-                //   });
-                // }}
-                // onMouseLeave={() => {
-                //   setCurrentImage({ ...currentImage, [product.id]: "" });
-                // }}
               />
               <div className="products-info">
-              <div className="products-name">{product.brand}</div>
+                <div className="products-name">{product.brand}</div>
                 <div className="products-name">{product.name}</div>
-                <div className="products-price">${product.price}</div>
-                <div className="products-offer">{product.offer}</div>
-
+                <div className="products-price">₹{product.price}</div>
+                <div className="products-offer" style={{color:"green",fontSize:"smaller"}}>offer price ₹{product.offer}</div>
               </div>
             </div>
           ))}
@@ -154,6 +153,8 @@ const Products = () => {
 };
 
 export default Products;
+
+
 
 
 
