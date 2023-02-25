@@ -1,0 +1,78 @@
+.size > button {
+  font-size: 15px;
+  padding: 5px 30px;
+  margin: 10px;
+}
+.size > button:hover {
+  color: brown;
+  background-color: rgb(198, 198, 236);
+}
+
+.colors {
+  width: 25%;
+  height: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.colors > div {
+  border: 1px solid;
+  border-radius: 75%;
+}
+.colors > div:nth-child(1) {
+  background-color: blueviolet;
+}
+.colors > div:nth-child(2) {
+  background-color: rgb(229, 95, 95);
+}
+.colors > div:nth-child(3) {
+  background-color: black;
+}
+
+.single-product-page {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 100px;
+}
+
+.product-images {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid red; */
+}
+
+.product-images img {
+  width: 100%;
+}
+
+.product-info {
+  width: 50%;
+  padding: 0 1rem;
+  /* border: 1px solid red; */
+}
+
+.product-name {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.product-price {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.product-color {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.product-description {
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+

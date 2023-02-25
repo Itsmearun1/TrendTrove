@@ -1,7 +1,6 @@
 import React from "react";
 import "../Components/Slider.css";
 import "./Home.css";
-import Navbar from "../Components/Navbar";
 import Slider1 from "../Components/Slider";
 import Slider2 from "../Components/Slider";
 import Slider3 from "../Components/Slider3";
@@ -10,8 +9,12 @@ import Footer from "../Components/Footer";
 const Home = () => {
   return (
     <>
-      <Navbar />
       <div className="wrapper">
+        <img
+          src="https://assets.ajio.com/cms/AJIO/WEB/D-last2days--.jpg"
+          alt=""
+        />
+        <Slider1 />
         <img
           src="https://assets.ajio.com/cms/AJIO/WEB/D-UHP-Rewards-Sectionheader.jpg"
           alt=""
@@ -31,7 +34,6 @@ const Home = () => {
             alt=""
           />
         </div>
-        <Slider1 />
         <img
           src="https://assets.ajio.com/cms/AJIO/WEB/D1-1440x90-11.jpg"
           id="zoom"

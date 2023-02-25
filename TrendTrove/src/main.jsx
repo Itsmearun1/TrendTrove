@@ -9,9 +9,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 ReactDOM.createRoot(document.getElementById("root")).render(
   // <AuthContextProvider>
     <BrowserRouter>
-      <ChakraProvider>
+      {/* <ChakraProvider> */}
         <App />
-      </ChakraProvider>
+      {/* </ChakraProvider> */}
     </BrowserRouter>
   // </AuthContextProvider>
 );

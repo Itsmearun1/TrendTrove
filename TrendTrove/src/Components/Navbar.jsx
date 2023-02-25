@@ -19,7 +19,7 @@ const Navbar = () => {
 
   const sections = [
     {
-      title: "WOMEN",
+      title: "MEN",
       subSections: [
         "SHOP ALL",
         "CLOTHING",
@@ -32,7 +32,7 @@ const Navbar = () => {
       ],
     },
     {
-      title: "MEN",
+      title: "WOMEN",
       subSections: [
         "SHOP ALL",
         "CLOTHING",
@@ -45,7 +45,7 @@ const Navbar = () => {
       ],
     },
     {
-      title: "BEAUTY",
+      title: "KIDS",
       subSections: [
         "SHOP ALL",
         "WOMENS BEAUTY",
@@ -55,7 +55,7 @@ const Navbar = () => {
       ],
     },
     {
-      title: "KIDS",
+      title: "INDIE",
       subSections: [
         "SHOP ALL",
         "BABY GIRLS",
@@ -66,78 +66,49 @@ const Navbar = () => {
       ],
     },
     {
-      title: "HOME",
+      title: "HOME AND KITCHEN",
       subSections: [
-        "NEW ARRIVALS",
-        "SHOP ALL",
-        "BATH",
-        "BED",
-        "FURNITURE",
-        "HOME DECOR",
-        "KITCHEN & DINING",
-        "PET ACCESSORIES",
-      ],
-    },
-    {
-      title: "DESIGNERS",
-      subSections: [
-        "GUCCI",
-        "SAINT LAURENT",
-        "VALENTINO",
-        "VERSACE",
-        "BALENCIAGA",
-        "BURBERRY",
-        "PRADA",
-      ],
-    },
-    {
-      title: "COMMUNITY",
-      subSections: ["DISCOVER", "BLOGS", "MY CLOSET", "INFLUENCER", "PROGRAM"],
-    },
-    {
-      title: "SALE",
-      subSections: [
-        "COUPONS",
-        "WOMENS SALE",
-        "MENS SALE",
-        "BEAUTYS SALE",
-        "KIDS SALE",
-        "HOMES SALE",
+        "Wall Decors",
+        "Wall Frames",
+        "Clocks",
+        "Photo Frames",
+        "Mirros",
+        "Lamps",
+        "Frgrance",
+        "Accessories",
       ],
     },
   ];
 
   return (
-    <nav>
-      <div className="navbar">
-        <div className="navbar-logo">
-          <img src={TrendTrove} alt="Logo" />
-        </div>
-        <Searchbar/>
-        <ul className="navbar-menu">
-          {sections.map((section, index) => (
-            <li
-              key={index}
-              className={`navbar-menu-item ${
-                activeMenu === index ? "active" : ""
-              }`}
-              onMouseEnter={() => handleMenuClick(index)}
-              onMouseLeave={() => handleMenuClick(index)}
-            >
-              {section.title}
-              {activeMenu === index && (
-                <ul className="navbar-submenu">
-                  {section.subSections.map((subSection, subIndex) => (
-                    <li key={subIndex} className="navbar-submenu-item">
-                      {subSection}
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </li>
-          ))}
-        </ul>
+    <nav className="navbar">
+      <div className="navbar-logo">
+        <img src={TrendTrove} alt="Logo" />
       </div>
+      <Searchbar />
+      <ul className="navbar-menu">
+        {sections.map((section, index) => (
+          <li
+            key={index}
+            className={`navbar-menu-item ${
+              activeMenu === index ? "active" : ""
+            }`}
+            onMouseEnter={() => handleMenuClick(index)}
+            onMouseLeave={() => handleMenuClick(index)}
+          >
+            {section.title}
+            {activeMenu === index && (
+              <ul className="navbar-submenu">
+                {section.subSections.map((subSection, subIndex) => (
+                  <li key={subIndex} className="navbar-submenu-item">
+                    {subSection}
+                  </li>
+                ))}
+              </ul>
+            )}
+          </li>
+        ))}
+      </ul>
     </nav>
   );
 };
