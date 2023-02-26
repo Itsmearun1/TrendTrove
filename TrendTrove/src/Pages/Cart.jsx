@@ -54,7 +54,7 @@ const Cart = () => {
 
   return (
     <>
-      <div><h2 className="title">Shopping Bag</h2></div>
+      <div><h2 className="cart-title">Shopping Bag</h2></div>
       <div className="cart-page">
         <div className="cart-items">
           {cartItems.map((item) => (

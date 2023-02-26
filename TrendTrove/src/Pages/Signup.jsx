@@ -12,7 +12,7 @@ const Signup = () => {
   const [phone, setPhone] = useState("");
   const [password, setPassword] = useState("");
   const [status, setStatus] = useState("");
-  const url = "https://63c6507adcdc478e15beeebb.mockapi.io/users";
+  const url = "https://63f5c81b9daf59d1ad7b4257.mockapi.io/users";
 
   const handleSubmit = async (event) => {
     event.preventDefault();

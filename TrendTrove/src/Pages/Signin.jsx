@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate, NavLink } from "react-router-dom";
 import "./Signin.css";
 import  Footer  from "../Components/Footer";
-// import img from "../images/signin.JPG";
+import img from "../Images/signin.jpg";
 import axios from "axios";
 
 const SignIn = () => {
@@ -10,7 +10,7 @@ const SignIn = () => {
   const [password, setPassword] = useState("");
   const [status, setStatus] = useState("");
   const [username, setUsername] = useState("");
-  const url = "https://63c6507adcdc478e15beeebb.mockapi.io/users";
+  const url = "https://63f5c81b9daf59d1ad7b4257.mockapi.io/users";
   const navigate = useNavigate();
   const [alldata,setAlldata] = useState([]);
 

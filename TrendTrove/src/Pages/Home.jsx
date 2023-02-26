@@ -1,20 +1,20 @@
 import React from "react";
 import "../Components/Slider.css";
 import "./Home.css";
-import Slider1 from "../Components/Slider";
 import Slider2 from "../Components/Slider";
 import Slider3 from "../Components/Slider3";
 import Slider4 from "../Components/Slider4";
 import Footer from "../Components/Footer";
+import Slider1 from "../Components/Slider";
 const Home = () => {
   return (
     <>
-      <div className="wrapper">
+      <div className="homewrapper">
         <img
           src="https://assets.ajio.com/cms/AJIO/WEB/D-last2days--.jpg"
           alt=""
         />
-        <Slider1 />
+        <Slider1/>
         <img
           src="https://assets.ajio.com/cms/AJIO/WEB/D-UHP-Rewards-Sectionheader.jpg"
           alt=""

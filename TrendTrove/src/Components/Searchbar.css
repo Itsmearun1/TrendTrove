@@ -1,6 +1,5 @@
 .searchbar {
     height: 25px;
-    /* width: 90%; */
     height: 50px;
     background-color: white;
     display: flex;
@@ -8,7 +7,7 @@
     padding: 10px;
     border: 1px solid lightgray;
     border-radius: 25px;
-    margin: auto;
+
 }
 
 .searchbar input {
