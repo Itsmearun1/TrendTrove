@@ -46,16 +46,19 @@ const Products = () => {
     let value = e.target.value;
     if (value === "") {
       setFilterBy("");
-    } else if (value === "Casual Dresses") {
-      setFilterBy("Dress");
-    } else if (value === "Pant Suits") {
-      setFilterBy("Pant");
+    } else if (value === "High Star") {
+      setFilterBy("High Star");
+    } else if (value === "PERFORMAX") {
+      setFilterBy("PERFORMAX");
+    } else if (value === "Teamspirit") {
+      setFilterBy("Teamspirit");
+    } else if (value === "VOXATI") {
+      setFilterBy("VOXATI");
     }
   };
-
   const filteredAndSortedProducts = products
     .filter((product) =>
-      product.name.toLowerCase().includes(filterBy.toLowerCase())
+      product.brand.toLowerCase().includes(filterBy.toLowerCase())
     )
     .sort((a, b) => {
       if (sortBy === "highest-price") {
@@ -68,7 +71,7 @@ const Products = () => {
         return b.rating - a.rating;
       }
     });
-  console.log(products)
+  console.log(products);
   return (
     <>
       <div className="head">
@@ -96,21 +99,16 @@ const Products = () => {
             <option value="highest-price">Highest Price</option>
             <option value="lowest-price">Lowest Price</option>
           </select>
-          <div className="section-title">FILTER BY</div>
+          <div className="section-title">FILTER BY BRAND</div>
+
           <select onChange={handleFilterChange}>
             <option value="">All</option>
-            <option value="Casual Dresses">Casual Dresses</option>
-            <option value="Pant Suits">Pant Suits</option>
-            <option value="Mother of the Bride">Mother of the Bride</option>
-            <option value="Special Occasion">Special Occasion</option>
-            <option value="Jacket Dresses">Jacket Dresses</option>
-            <option value="Dress Sets">Dress Sets</option>
-            <option value="Curvy Dresses">Curvy Dresses</option>
-            <option value="Liz & Me Dresses">Liz & Me Dresses</option>
-            <option value="Petite Dresses">Petite Dresses</option>
-            <option value="Dresses by Length">Dresses by Length</option>
-            <option value="Wear Underneath">Wear Underneath</option>
+            <option value="High Star">High Star</option>
+            <option value="PERFORMAX">PERFORMAX</option>
+            <option value="Teamspirit">Teamspirit</option>
+            <option value="VOXATI">VOXATI</option>
           </select>
+
           <div className="section-title">CATEGORY</div>
           <div>Casual Dresses</div>
           <div>Mother of the Bride</div>
@@ -141,7 +139,12 @@ const Products = () => {
                 <div className="products-name">{product.brand}</div>
                 <div className="products-name">{product.name}</div>
                 <div className="products-price">₹{product.price}</div>
-                <div className="products-offer" style={{color:"green",fontSize:"smaller"}}>offer price ₹{product.offer}</div>
+                <div
+                  className="products-offer"
+                  style={{ color: "green", fontSize: "smaller" }}
+                >
+                  offer price ₹{product.offer}
+                </div>
               </div>
             </div>
           ))}
@@ -153,8 +156,3 @@ const Products = () => {
 };
 
 export default Products;
-
-
-
-
-

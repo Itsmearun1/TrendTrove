@@ -1,0 +1,27 @@
+.sproduct-card {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+  }
+  
+  .pimg {
+    width: 80%;
+  }
+  
+  .sproducts-name {
+    margin-top: 10px;
+  }
+  
+  .sproducts-price {
+    color: #f44336;
+    margin-top: 5px;
+  }
+  .sproduct-card{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+  }

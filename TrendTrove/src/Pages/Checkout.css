@@ -1,0 +1,69 @@
+.checkout {
+    width: 50%;
+    margin: 10px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  h2{
+    color: rgb(52, 52, 110);
+  }
+  .checkout-section {
+    margin-bottom: 20px;
+  }
+  
+  h3 {
+    margin-bottom: 10px;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .confirm-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .confirm-button:hover {
+    background-color: #3e8e41;
+  }
+
+  .checkout {
+    font-family: Arial, sans-serif;
+  }
+  
+  .checkout-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  h3 {
+    font-weight: bold;
+  }
+  
+  label {
+    margin-left: 10px;
+    font-weight: normal;
+  }
+  
+  .input-field {
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  .confirm-button {
+    font-size: 16px;
+    width: 100%;
+    margin-top: 20px;
+  }
+  

@@ -17,7 +17,7 @@
 }
 .colors > div {
   border: 1px solid;
-  border-radius: 75%;
+  border-radius: 50%;
 }
 .colors > div:nth-child(1) {
   background-color: blueviolet;
@@ -74,5 +74,17 @@
 .product-description {
   font-size: 1.25rem;
   line-height: 1.5;
+}
+.addtocart{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: goldenrod;
+  color: white;
+  border: none;
+  width: 80%;
+  height: 30px;
+  padding: 25px;
+  margin-bottom: 30px;
 }
 

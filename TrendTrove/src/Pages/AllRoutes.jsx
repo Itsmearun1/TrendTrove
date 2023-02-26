@@ -8,17 +8,19 @@ import Checkout from './Checkout';
 import Cart from './Cart';
 import Signin from './Signin';
 import Signup from './Signup';
+import AdminDashboard from './AdminDasboard';
 const Allroutes = () => {
   return (
     <Routes>
         <Route path='/' element={<Home/>}></Route>
         <Route path='signin' element={<Signin/>}></Route>
-        <Route path='signup' element={<Signup/>}></Route>
+        <Route path="/signin/signup" element={<Signup/>}></Route>
         <Route path='products' element={<Products/>}></Route>
         <Route path='cart' element={<Cart/>}></Route>
         <Route path='products/:id' element={<SingleProduct/>}></Route>
         <Route path='*' element={<Notfound/>}></Route>
         <Route path='checkout' element={<Checkout/>}></Route>
+        <Route path="/dashboard" element={<AdminDashboard />} />
     </Routes>
   )
 }

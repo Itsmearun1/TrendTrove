@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import "./SingleProduct.css";
 import Footer from "../Components/Footer";
+import Myswiper from "../Components/Myswiper";
 const sliderData = [
   {
     img: "https://www.catherines.com/dw/image/v2/BBKT_PRD/on/demandware.static/-/Sites-masterCatalog_Catherines/default/dwf6a3d80b/images/hi-res/2641_08082_mc_4497.jpg?sw=200&sh=288&sm=fit",
@@ -114,7 +115,7 @@ const SingleProduct = () => {
             <button>S</button>
             <button>XL</button>
           </div>
-          <button
+          <button className="addtocart"
             onClick={() => {
               addToCart(product);
             }}
@@ -122,12 +123,15 @@ const SingleProduct = () => {
             Add to Cart
           </button>
           <div className="product-description">
-            <h3>Details</h3>
-            {product.Description}
+            <h5>RETURNS</h5>
+            <p>Easy 10 days return and exchange. Return
+              Policies may vary based on products and promotions. For full
+              details on our Returns Policies, please click here․
+            </p>
           </div>
         </div>
       </div>
-      {/* <MySwiper sliderData={sliderData}/> */}
+      <Myswiper/>
       <Footer />
     </>
   );
